@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PWA TEST</title>
+        <link rel="canonical" href="https://meira-s-nishiyama.github.io/PWA/" />
+        <link rel="manifest" href="/PWA/manifest.webmanifest">
+    </head>
+    <body>
+        <h1>GitHub page as PWA template</h1>
+        …
+<script>
+if (navigator.serviceWorker) {
+    navigator.serviceWorker.register (
+        "/PWA/sw.js",
+        {scope: "/PWA/"}
+    )
+}
+</script>
+    </body>
+</html>
